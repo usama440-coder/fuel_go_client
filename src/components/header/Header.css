@@ -1,0 +1,10 @@
+.header h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  
+  .header p {
+    color: #ffffff;
+    font-family: 'poppins', sans-serif;
+  }
