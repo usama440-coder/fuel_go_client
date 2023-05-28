@@ -6,27 +6,23 @@ import AddVehicle from "./pages/addVehicle/addVehicle";
 import DriverDetails from "./pages/driverDetails/driverDetails";
 import VehicleDetails from "./pages/vehicleDetails/vehicleDetails";
 import PumpDetails from "./pages/pumpDetails/pumpDetails";
+import NewDriver from "./pages/newDriver/newDriver";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div className="App">
+      <ToastContainer />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-        </Routes>
-        <Routes>
           <Route path="/addPump" element={<AddPump />} />
-        </Routes>
-        <Routes>
+          <Route path="/newDriver" element={<NewDriver />} />
           <Route path="/addVehicle" element={<AddVehicle />} />
-        </Routes>
-        <Routes>
           <Route path="/driverDetails" element={<DriverDetails />} />
-        </Routes>
-        <Routes>
           <Route path="/pumpDetails" element={<PumpDetails />} />
-        </Routes>
-        <Routes>
           <Route path="/vehicleDetails" element={<VehicleDetails />} />
         </Routes>
       </BrowserRouter>

@@ -9,6 +9,10 @@ const Navbar = () => {
       <div className="navlinks">
         <NavLink className="navlink" to="/">
           <FaUser className="navLinkIcon" />
+          <p className="navLinkDesc">Dashboard</p>
+        </NavLink>
+        <NavLink className="navlink" to="/newDriver">
+          <FaUser className="navLinkIcon" />
           <p className="navLinkDesc">New Driver</p>
         </NavLink>
 

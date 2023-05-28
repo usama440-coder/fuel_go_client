@@ -4,7 +4,67 @@
   
   .content {
     flex: 5;
-    padding: 20px;
+    padding: 30px;
   }
   
+
+  .form {
+    display: flex;
+    /* flex-direction: column; */
+    color: white;
+    gap: 10px;
+    margin-top: 30px;
+    /* max-width: 600px; */
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: gray;
+    gap: 5px;
+}
+
+.form input {
+    background: #F3F0FF;
+    outline: none;
+    border: none;
+    padding: 15px 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    min-width: 250px;
+    width: 100%;
+  }
   
+  .form select {
+  background: #F3F0FF;
+  outline: none;
+  border: none;
+  padding: 15px 5px;
+  border-radius: 10px;
+  font-size: 14px;
+  min-width: 250px;
+  width: 100%;
+  
+}
+
+.formBtn {
+    margin-top: 40px;
+    width: 120px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #F3F0FF;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.formBtn:hover {
+    background-color: var(--yellow-color);
+    color: white;
+}

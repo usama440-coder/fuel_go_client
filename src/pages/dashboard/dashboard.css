@@ -1,0 +1,6 @@
+.statsContainer {
+    margin-top: 30px;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
