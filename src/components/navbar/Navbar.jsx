@@ -1,6 +1,12 @@
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-import { FaUser, FaGasPump, FaCar, FaSignOutAlt } from "react-icons/fa";
+import {
+  FaUser,
+  FaGasPump,
+  FaCar,
+  FaSignOutAlt,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -24,6 +30,11 @@ const Navbar = () => {
         <NavLink className="navlink" to="/addVehicle">
           <FaCar className="navLinkIcon" />
           <p className="navLinkDesc">New Vehicle</p>
+        </NavLink>
+
+        <NavLink className="navlink" to="/requestsDetails">
+          <FaEnvelope className="navLinkIcon" />
+          <p className="navLinkDesc">Requests Details</p>
         </NavLink>
 
         <NavLink className="navlink" to="/vehicleDetails">

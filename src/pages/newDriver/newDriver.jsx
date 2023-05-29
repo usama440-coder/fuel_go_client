@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Header from "../../components/header/Header";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { api_url } from "../../utils/api";
 
 const NewDriver = () => {
   const [data, setData] = useState({});
@@ -11,7 +12,7 @@ const NewDriver = () => {
     e.preventDefault();
 
     try {
-      await fetch("http://10.25.52.59:5000/api/v1/addnewdriver/adddriver", {
+      await fetch(`${api_url}/addnewdriver/adddriver`, {
         method: "POST",
         mode: "cors",
         cache: "no-cache",

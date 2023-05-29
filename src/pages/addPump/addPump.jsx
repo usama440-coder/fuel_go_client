@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { api_url } from "../../utils/api";
 
 const AddPump = () => {
   const [data, setData] = useState({});
@@ -24,7 +25,7 @@ const AddPump = () => {
         contact_number: data?.contact_number,
       };
 
-      await fetch("http://10.25.52.59:5000/api/v1/addnewpump/addpump", {
+      await fetch(`${api_url}/addnewpump/addpump`, {
         method: "POST",
         mode: "cors",
         cache: "no-cache",

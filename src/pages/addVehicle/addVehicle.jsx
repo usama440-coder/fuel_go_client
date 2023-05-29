@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { api_url } from "../../utils/api";
 
 const AddVehicle = () => {
   const [data, setData] = useState({ fuel_type: "Gasoline" });
@@ -17,7 +18,7 @@ const AddVehicle = () => {
     e.preventDefault();
 
     try {
-      await fetch("http://10.25.52.59:5000/api/v1/addnewvehicle/addvehicle", {
+      await fetch(`${api_url}/addnewvehicle/addvehicle`, {
         method: "POST",
         mode: "cors",
         cache: "no-cache",
